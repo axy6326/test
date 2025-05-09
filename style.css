@@ -1,0 +1,93 @@
+:root{
+    --primary-color: #fec700;
+    --secondary-color: #4caf50;
+    --heading-color:#333 ;
+    --text-color:#555555 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.hero_section{
+    background: url(./hero.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0 ;
+
+
+ .section_heading{
+    font-size:30px ;
+    font-weight: 500;
+    color: #fff;
+    font-style: italic;
+}
+
+ .section_SubHeading{
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 10px;
+}
+
+ .btn-custom{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    &:hover{
+        background-color: var(--secondary-color);
+    }
+
+
+}
+
+}
+
+
+.service_section{
+    padding: 100px 0;
+
+    .section_heading{
+        font-size:50px ;
+        font-weight: 700;
+        color: var(--heading-color);
+        font-style: italic;
+    }
+
+    .section_SubHeading{
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-color);
+        margin-top: 10px;
+        padding: 0 300px;
+    }
+
+    .service_card{
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+
+        &:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+    }
+}
